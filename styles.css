@@ -1,29 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light grey */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     flex-direction: column;
-  }
+}
   
-  h1 {
+h1 {
     margin-bottom: 20px;
-  }
+}
   
-  .mancala-board {
+.mancala-board {
     display: grid;
     grid-template-columns: 100px repeat(6, 80px) 100px;
     gap: 10px;
-    background-color: #2d3436;
+    background-color: #3b3b3b; /* Darker grey for better contrast */
     padding: 20px;
     border-radius: 10px;
-  }
+}
   
-  .store {
-    background-color: #74b9ff;
+.store {
+    background-color: #00a8ff; /* Bright blue */
     color: white;
     font-size: 2rem;
     display: flex;
@@ -31,16 +31,16 @@ body {
     align-items: center;
     border-radius: 10px;
     height: 160px;
-  }
+}
   
-  .row {
+.row {
     grid-column: 2 / span 6;
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  .pit {
-    background-color: #ffeaa7;
+.pit {
+    background-color: #ffcc00; /* Bright yellow for visibility */
     color: black;
     font-size: 1.5rem;
     display: flex;
@@ -49,4 +49,4 @@ body {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-  }
+}
