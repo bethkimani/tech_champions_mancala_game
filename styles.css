@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .mancala-board {
+    display: grid;
+    grid-template-columns: 100px repeat(6, 80px) 100px;
+    gap: 10px;
+    background-color: #2d3436;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .store {
+    background-color: #74b9ff;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 160px;
+  }
+  
+  .row {
+    grid-column: 2 / span 6;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pit {
+    background-color: #ffeaa7;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
