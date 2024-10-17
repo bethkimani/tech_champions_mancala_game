@@ -38,7 +38,7 @@ Nelly Mwendwa
 Esther Wambui-essie.k004@gmail.com
 
 ## License
-This project is lisenced under the MIT License
+This project is licensed under the MIT License
 
 
 
