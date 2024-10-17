@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Update the board display
     function updateBoard() {
-      for (let i = 0; i < 12; i++) {
-        document.getElementById('p' + i).textContent = pits[i];
+      // Update the pits based on their IDs
+      for (let i = 0; i < 6; i++) {
+        document.getElementById('p1-pocket' + (i + 1)).textContent = pits[i]; // Player 1's pockets
+        document.getElementById('p2-pocket' + (6 - i)).textContent = pits[i + 6]; // Player 2's pockets
       }
-      document.getElementById('store1').textContent = stores[0];
-      document.getElementById('store2').textContent = stores[1];
+      document.getElementById('store1').textContent = stores[0]; // Player 1's store
+      document.getElementById('store2').textContent = stores[1]; // Player 2's store
     }
   
     // Player makes a move
@@ -99,10 +101,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // Add event listeners to the pits
-    for (let i = 0; i < 12; i++) {
-      document.getElementById('p' + i).addEventListener('click', function () {
-        if ((currentPlayer === 0 && i < 6) || (currentPlayer === 1 && i >= 6)) {
+    for (let i = 0; i < 6; i++) {
+      document.getElementById('p1-pocket' + (i + 1)).addEventListener('click', function () {
+        if (currentPlayer === 0) {
           moveStones(i);
+        }
+      });
+      
+      document.getElementById('p2-pocket' + (6 - i)).addEventListener('click', function () {
+        if (currentPlayer === 1) {
+          moveStones(i + 6);
         }
       });
     }
