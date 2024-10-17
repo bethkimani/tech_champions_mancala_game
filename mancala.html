@@ -1,72 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light grey */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mancala Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-header {
-    width: 100%;
-    background-color: #333; /* Dark background for header */
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-}
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mancala.html">Play Mancala</a>
+  </nav>
+</header>
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
+<h1>Mancala Game</h1>
 
-nav a:hover {
-    color: #00a8ff; /* Bright blue hover effect */
-}
+<div class="mancala-board">
+  <div class="store" id="store2">0</div>
+  <div class="row">
+    <div class="pocket" id="p2-pocket6">4</div>
+    <div class="pocket" id="p2-pocket5">4</div>
+    <div class="pocket" id="p2-pocket4">4</div>
+    <div class="pocket" id="p2-pocket3">4</div>
+    <div class="pocket" id="p2-pocket2">4</div>
+    <div class="pocket" id="p2-pocket1">4</div>
+  </div>
 
-h1 {
-    margin-bottom: 20px;
-}
+  <div class="row">
+    <div class="pocket" id="p1-pocket1">4</div>
+    <div class="pocket" id="p1-pocket2">4</div>
+    <div class="pocket" id="p1-pocket3">4</div>
+    <div class="pocket" id="p1-pocket4">4</div>
+    <div class="pocket" id="p1-pocket5">4</div>
+    <div class="pocket" id="p1-pocket6">4</div>
+  </div>
 
-.mancala-board {
-    display: grid;
-    grid-template-columns: 100px repeat(6, 80px) 100px;
-    gap: 10px;
-    background-color: #3b3b3b; /* Darker grey for better contrast */
-    padding: 20px;
-    border-radius: 10px;
-}
+  <div class="store" id="store1">0</div>
+</div>
 
-.store {
-    background-color: #00a8ff; /* Bright blue */
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 160px;
-}
-
-.row {
-    grid-column: 2 / span 6;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pocket {
-    background-color: #ffcc00; /* Bright yellow for visibility */
-    color: black;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    cursor: pointer; /* Add pointer to indicate clickable */
-}
+<script src="script.js"></script> <!-- Move this here -->
+</body>
+</html>
