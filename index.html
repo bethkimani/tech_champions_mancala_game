@@ -10,6 +10,7 @@
 
   <header>
     <nav>
+      <a href ="home.html">Home</a>
       <a href="about.html">About</a>
       <a href="mancala.html">Play Mancala</a>
     </nav>
@@ -17,33 +18,174 @@
 
   <h1>Mancala Game</h1>
 
-  <div class="mancala-board">
-    <!-- Player 2 Store -->
-    <div class="store" id="store2">0</div>
+  <!--HOME PAGE-->
 
-    <!-- Player 2's pockets -->
-    <div class="row">
-      <div class="pocket" id="p2-pocket6"></div>
-      <div class="pocket" id="p2-pocket5"></div>
-      <div class="pocket" id="p2-pocket4"></div>
-      <div class="pocket" id="p2-pocket3"></div>
-      <div class="pocket" id="p2-pocket2"></div>
-      <div class="pocket" id="p2-pocket1"></div>
+  <section id="home" class="home-section">
+    <div class="marquee">
+        <span>Welcome to the Mancala Game! Gather your friends and family for a fun experience.</span>
     </div>
 
-    <!-- Player 1's pockets -->
-    <div class="row">
-      <div class="pocket" id="p1-pocket1"></div>
-      <div class="pocket" id="p1-pocket2"></div>
-      <div class="pocket" id="p1-pocket3"></div>
-      <div class="pocket" id="p1-pocket4"></div>
-      <div class="pocket" id="p1-pocket5"></div>
-      <div class="pocket" id="p1-pocket6"></div>
-    </div>
-  
-    <!-- Player 1 Store -->
-    <div class="store" id="store1">0</div>
+    <img src="download.jpeg" alt="Mancala Game Image" class="home-image">
+
+    <h2 class="home-title">Welcome to Mancala Game!</h2>
+    <p class="home-description">
+        Experience the ancient game of Mancala. Gather your friends and family for a fun and strategic gameplay!
+    </p>
+    <p class="home-description">
+        Get ready to challenge yourself and improve your skills. Have fun!
+    </p>
+
+    <a href="mancala.html" class="cta-button">Start Playing Now</a>
+</section>
+
+<!--ABOUT Page-->
+<h1>About Mancala</h1>
+<img src="download.jpeg" alt="Mancala Board">
+
+<p>Mancala is a strategic game of capturing stones.</p>
+<h2>How to play:</h2>
+<ul class="instructions">
+    <li>The game begins with the player selecting a pocket on their side. These pockets are highlighted during your turn.</li>
+    <li>The game moves in a counter-clockwise rotation and deposits 1 stone in each pocket along the way until the stones run out.</li>
+    <li>The game will skip the computer's mancala, only placing your stones in the pockets and your mancala.</li>
+    <li>If the final stone is placed in your mancala, your turn continues and you may select another pocket.</li>
+    <li>If the final stone is placed in an empty pocket on your side, it may capture stones in the pocket directly across. The stones in both pockets will go to your mancala.</li>
+    <li>When your turn ends, a "Computer's Play" button will appear. Select this to have the computer make its move.</li>
+    <li>If you would prefer to play with a friend, just have them select a legal pocket during the computer's turn.</li>
+    <li>The game ends when either player has collected more than 24 stones.</li>
+    <li>Press the "Play Again!" button if you'd like to try again.</li>
+</ul>
+<a href="mancala.html">Back to Game</a><!-- Link back to the game -->
+
+
+
+<!--HOW TO PLAY MANCALA GAME-->
+
+<div id="scoreboard">
+  <div id="scoreboard-one">
+    <p>Player 1:</p>
+    <p id="score-one">0</p>
   </div>
+  <div class="player-one-display">
+    <h1>Player One</h1>
+  </div>
+  <div class="player-two-display">
+    <h1>Player Two</h1>
+  </div>
+  <div id="scoreboard-two">
+    <p>Player 2:</p>
+    <p id="score-two">0</p>
+  </div>
+</div>
+<main>
+  <div class="board">
+    <div class="mancala-one"></div>
+    <div class="container">
+      <div class="piece-display-one">
+        <div class="pocket-one-display"><p></p></div>
+        <div class="pocket-two-display"><p></p></div>
+        <div class="pocket-three-display"><p></p></div>
+        <div class="pocket-four-display"><p></p></div>
+        <div class="pocket-five-display"><p></p></div>
+        <div class="pocket-six-display"><p></p></div>
+      </div>
+      <div class="side-one">
+        <div class="pocket-one">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-two">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-three">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-four">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-five">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-six">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+      </div>
+
+      <div class="side-two">
+        <div class="pocket-seven">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-eight">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-nine">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-ten">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-eleven">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+        <div class="pocket-twelve">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+      </div>
+      <div class="piece-display-two">
+        <div class="pocket-seven-display"><p></p></div>
+        <div class="pocket-eight-display"><p></p></div>
+        <div class="pocket-nine-display"><p></p></div>
+        <div class="pocket-ten-display"><p></p></div>
+        <div class="pocket-eleven-display"><p></p></div>
+        <div class="pocket-twelve-display"><p></p></div>
+      </div>
+    </div>
+
+    <div class="mancala-two"></div>
+  </div>
+</main>
+ <button id="vet-button">Veteran Mode: Off</button>
+    <a
+      href="https://www.youtube.com/watch?v=-A-djjimCcM&t=41s&ab_channel=MissBrain%27sCoolMathVideos"
+    >
+      How To Play
+    </a>
+  
 
   <script src="script.js"></script>
 </body>
