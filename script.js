@@ -127,7 +127,6 @@
   updateBoard(); // Initial update
 }); */
 
-/declaring various pieces of html in js
 //mancalas
 let mancalaOne = document.querySelector(".mancala-one");
 let mancalaTwo = document.querySelector(".mancala-two");
@@ -744,5 +743,3 @@ for (let pcket of pocketsTwo) {
 }
 
 randomPlayer();
-
-
